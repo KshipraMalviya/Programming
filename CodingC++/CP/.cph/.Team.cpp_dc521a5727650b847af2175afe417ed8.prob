@@ -1,0 +1,1 @@
+{"name":"Local: Team","url":"c:\\Users\\DELL\\Desktop\\CodingC++\\CP\\Team.cpp","tests":[{"id":1645504151614,"input":"3\n1 1 0\n1 1 1\n1 0 0\n","output":"2\n"},{"id":1645504166449,"input":"2\n1 0 0\n0 1 1","output":"1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\DELL\\Desktop\\CodingC++\\CP\\Team.cpp","group":"local","local":true}

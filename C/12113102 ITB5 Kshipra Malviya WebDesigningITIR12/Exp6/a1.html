@@ -1,0 +1,60 @@
+<!-- This is Experiment 6 - 1(a)(i) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Division</title>
+    <style>
+        #htmlform{
+            border: 18px;
+            border-color:rgb(31, 186, 186);
+            padding: 100px 0px;
+        }
+        body{
+            padding: 0px 108px;
+            margin: 0px 508px;
+            background-color: rgb(187, 254, 254);
+        }
+        #btn{
+            background-color: rgb(92, 231, 255);
+            color: black;
+            border-radius: 18px;
+            margin: 28px 38px;
+        }
+        #btn:hover{
+            background-color: rgb(255, 255, 88);
+            color: black;
+        }
+        .textbox{
+            border-radius: 8px;
+            margin: 18px;
+            padding: 2px 8px;
+        }
+    </style>
+</head>
+<body>
+    <form id="htmlform">
+        <div>
+            Enter a : <input type="number" id="a" class="textbox" required>
+        </div>
+        <div>
+            Enter b : <input type="number" id="b" class="textbox" required>
+        </div>
+        <div id="quotient"></div>
+        <div id="remainder"></div>
+        <script>
+            function division()
+            {
+                let n1=document.getElementById("a").value;
+                let n2=document.getElementById("b").value;
+                document.getElementById("quotient").innerHTML="Quotient = "+((n1/n2)|0);
+                document.getElementById("remainder").innerHTML="Remainder = "+(n1%n2);
+            }
+        </script>
+        <button id="btn" type="button" onclick="division()">Calculate</button>
+    </form>
+</body>
+</html>

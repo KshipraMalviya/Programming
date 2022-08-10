@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random</title>
+</head>
+<body>
+    <label for="num">Guess a random number between 1 to 10  </label><br>
+    <input type="number" id="num" name="num"><br><br>
+    <button type="button" onclick="check()">Check!</button>
+    <p id="display"></p>
+    <script>
+        function check()
+        {
+            let a=parseInt(Math.random()*9+1);
+            if(a==document.getElementById("num").value)
+            {
+                document.getElementById("display").innerHTML="Good Work!";
+            }
+            else
+            {
+                document.getElementById("display").innerHTML="Not Matched!";
+            }
+        }
+    </script>
+</body>
+</html>

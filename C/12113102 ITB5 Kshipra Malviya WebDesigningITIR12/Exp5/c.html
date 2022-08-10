@@ -1,0 +1,23 @@
+<!-- This is Experiment 5 - 1(c) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+</head>
+<body onload=change()>
+    <script>
+        let i = 0;
+        let color = ["pink", "blue", "yellow", "green","purple"];
+function change() 
+{
+  document.bgColor=color[i];
+  i = (i + 1) % color.length;
+  setTimeout(change,500);
+}
+    </script>
+</body>
+</html>

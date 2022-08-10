@@ -1,0 +1,97 @@
+<!-- This is Experiment 6 - 1(b) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        #htmlform{
+            border: 18px;
+            border-color:rgb(31, 186, 186);
+        }
+        body{
+            padding: 0px 108px;
+            margin: 0px 508px;
+            background-color: rgb(187, 254, 254);
+        }
+        .btn{
+            background-color: rgb(92, 231, 255);
+            color: black;
+            border-radius: 18px;
+            margin: 0px 28px;
+        }
+        .btn:hover{
+            background-color: rgb(255, 255, 88);
+            color: black;
+        }
+        .textbox{
+            border-radius: 8px;
+            padding: 2px 8px;
+            margin:10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Form</h1>
+    <form>
+    <div id="htmlform">
+        <div>
+            First Name : <input type="text" class="textbox" name="fn" required>
+        </div>
+        <br>
+        <div>
+            Last Name : <input type="text" class="textbox" name="ln" required>
+        </div>
+        <br>
+        <div>
+            Phone No. : <input type="number"  id="phn" class="textbox" name="phn" required>
+<script>
+    function validPhn()
+    {
+        let a= document.getElementById("phn").value;
+        let c=0;
+        while(a!=0)
+        {
+            a=(a/10)|0;
+            c++;
+        }
+        if(c!=10)
+        {
+            alert("Enter Valid Phone Number");
+        }
+    }
+</script>
+<br>
+        <div>
+            Email : <input type="email" id="em" class="textbox" name="myEmail" id="" required>
+        </div>
+        <br>
+        <div>
+            Date : <input type="date" class="textbox" name="myDate" id="" required>
+        </div>
+        <br>
+        </div>
+        <br>
+        <div>
+            Gender : Male <input type="radio" name="myGender" id=""> Female <input type="radio" name="myGender" id="">Other <input type="radio" name="myGender" id="" required>
+        </div>
+        <br>
+
+        <div>
+            <label for="pwd">Password:</label>
+            <input type="password" id="pwd" minlength="8" required>
+        </div>
+
+        <br>
+        <br>
+        <div>
+            <input type="reset" class ="btn" value="Cancel">
+            <input type="submit" class ="btn" onclick="validPhn()" value="Submit">
+        </div>
+    </form>
+</div>
+</body>
+</html>

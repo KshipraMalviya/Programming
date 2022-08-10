@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Muffins!</title>
+    <style>
+        body{
+            padding: 0px 108px;
+            margin: 0px 508px;
+            background-color: rgb(255, 174, 139);
+        }
+        #btn{
+            background-color: rgb(92, 231, 255);
+            color: black;
+            border-radius: 18px;
+            margin: 0px 28px;
+        }
+        #btn:hover{
+            background-color: rgb(255, 255, 88);
+            color: black;
+        }
+        .textbox{
+            border-radius: 8px;
+            padding: 2px 8px;
+        }
+    </style>
+</head>
+<body>
+    <div id="htmlform">
+    <form >
+        <div>
+            <p style="text-align: center; font-size: 40px;"> <em> <b> Order Muffins! </em></b></p>
+            <p style="text-align: center; font-size: 20px;"> <em> How many muffins you want to order? </em></p>
+            <br>
+            <input type="number" class="textbox" name="" id="muff">
+        <br>
+        <script>
+            function myFunction()
+            {
+                let a= document.getElementById("muff").value;
+                for (let i = 0; i < a; i++) 
+                {      
+                    let image = document.createElement("img");
+                    image.src = "m.png";
+                    image.width=100;
+                    document.body.appendChild(image);
+                    image.align="center";
+                }
+            }
+            
+        </script>
+        <br>
+        <button type="button" id="btn" onclick="myFunction()">Submit</button> <br><br> <br>
+        <div>
+        </div>
+    </form>
+</div>
+</body>
+</html>

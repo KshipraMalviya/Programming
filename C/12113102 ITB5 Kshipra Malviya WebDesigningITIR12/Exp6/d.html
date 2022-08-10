@@ -1,0 +1,68 @@
+<!-- This is Experiment 6 - 1(d) -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coin Tossing Game</title>
+    <style>
+      button {
+        background-color: rgb(135, 65, 22);
+        color: white;
+        border: rgb(179, 80, 19);
+        border-radius: 18px;
+      }
+      button:hover {
+        background-color: rgb(255, 196, 0);
+      }
+      table, th,td{
+        border: 2px solid  rgb(135, 65, 22);
+        border-collapse: collapse;
+        margin: 0px auto;
+        width: 408px;
+        background-color: rgb(255, 235, 148);
+        font-size: large;
+      }
+    </style>
+  </head>
+  <body>
+    <marquee behavior="alternate" direction="right"
+      ><h1 style="font-style: italic">Toss The Coin!</h1></marquee
+    >
+    <div
+      style="
+        float: left;
+        margin-left: 488px;
+        margin-right: 58px;
+        visibility: visible;
+      "
+    >
+      <img src="head.jpg" id="head" alt="Head" height="258px" />
+    </div>
+    <div style="margin-top: 38px; visibility: hidden">
+      <img src="tail.jpg" id="tail" alt="Tail" height="238px" />
+    </div>
+    <button type="button" style="margin: 5% 15%; padding: 18px 28px; font-size: larger" onclick="toss()">Toss!</button>
+    <button type="button"style="margin: 0% 28%; padding: 18px 28px; font-size: larger;" onclick="reset()">Reset</button>
+    <table>
+      <tr>
+        <th>Face</th>
+        <th>Frequency</th>
+        <th>Percentage</th>
+      </tr>
+      <tr>
+        <th>Head</th>
+        <td id="hfreq">0</td>
+        <td id="hper">0</td>
+      </tr>
+      <tr>
+        <th>Tail</th>
+        <td id="tfreq">0</td>
+        <td id="tper">0</td>
+      </tr>
+    </table>
+  </body>
+  <script src="script.js"></script>
+</html>

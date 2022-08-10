@@ -1,0 +1,57 @@
+<!-- This is Experiment 5 - 1(h) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Overloading in JS</title>
+    <style>
+        body{
+            background-color: rgb(181, 255, 255);
+        }
+        div{
+            margin: 18px 608px;
+        }
+        .txt{
+            border-radius: 18px;
+            width: 78px;
+            padding: 0px 8px;
+        }
+        h1{
+            margin-bottom: 38px;
+        }
+        button{
+            margin: 18px 638px;
+            background-color: aqua;
+            border-radius: 18px;
+            padding: 3px 8px;
+        }
+        button:hover{
+            background-color: rgb(255, 255, 110);
+        }
+    </style>
+</head>
+<body>
+    <marquee behavior="alternate" direction="right"><h1 style="font-style: italic;">Sum Calculator</h1></marquee>
+    <div>Enter first number &nbsp;&nbsp;&nbsp;&nbsp; : <input id="a" class="txt" type="text"><br></div>
+    <div>Enter second number : <input id="b" class="txt" type="text"><br></div>
+    <div id="result"></div>
+    <button type="button" onclick="add()">Calculate Sum!</button>
+    <script>
+        function add()
+        {
+            let a=parseInt(document.getElementById("a").value);
+            let b=parseInt(document.getElementById("b").value);
+            document.getElementById("result").innerHTML="Sum = "+(a+b);
+        }
+        function add()
+        {
+            let a=parseFloat(document.getElementById("a").value);
+            let b=parseFloat(document.getElementById("b").value);
+            document.getElementById("result").innerHTML="Sum = "+(a+b);
+        }
+    </script>
+</body>
+</html>

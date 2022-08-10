@@ -1,0 +1,73 @@
+<!-- This is Experiment 6 - 1(a)(ii) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Division</title>
+    <style>
+        #htmlform{
+            border: 18px;
+            border-color:rgb(31, 186, 186);
+            padding: 100px 0px;
+        }
+        body{
+            padding: 0px 108px;
+            margin: 0px 508px;
+            background-color: rgb(187, 254, 254);
+        }
+        #btn{
+            background-color: rgb(92, 231, 255);
+            color: black;
+            border-radius: 18px;
+            margin: 28px 38px;
+        }
+        #btn:hover{
+            background-color: rgb(255, 255, 88);
+            color: black;
+        }
+        .textbox{
+            border-radius: 8px;
+            margin: 18px;
+            padding: 2px 8px;
+        }
+    </style>
+</head>
+<body>
+    <form id="htmlform">
+        <div>
+            Enter a number between 1 and 99999 : <input type="number" id="num" class="textbox" required>
+        </div>
+        <script>
+            function digits()
+            {
+                let n=document.getElementById("num").value;
+                let r=0;
+                while(n!=0)
+                {
+                    let d=n%10;
+                    r=r*10+d;
+                    n=(n/10)|0;
+                }
+                n=r;
+                if(n>=1 && n<=99999)
+                {
+                    while(n!=0)
+                    {
+                        let d=n%10;
+                        document.write(d+"  ");
+                        n=(n/10)|0;
+                    }
+                }
+                else
+                {
+                    document.write("Invalid Input");
+                }
+            }
+        </script>
+        <button id="btn" onclick="digits()">Display</button>
+    </form>
+</body>
+</html>

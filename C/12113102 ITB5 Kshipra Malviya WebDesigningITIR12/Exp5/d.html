@@ -1,0 +1,61 @@
+<!-- This is Experiment 5 - 1(d) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Users Action</h1>
+    <p id="demo" onmouseover="mouseOver()" onmouseout="mouseOut()">Mouse over me</p>
+
+    <p id="large" onmouseover="large()" onmouseout="l()">Mouse over me</p>
+
+    <p id="underline" onmouseover="underline()" onmouseout="u()">Mouse over me</p>
+
+    <p id="bold" onmouseover="boldd()" onmouseout="b()">Mouse over me</p>
+
+    <script>
+    function mouseOver() {
+      document.getElementById("demo").style.fontStyle = "italic";
+    }
+    
+    function mouseOut() {
+      document.getElementById("demo").style.fontStyle = "normal";
+    }
+
+    function large()
+    {
+        document.getElementById("large").style.fontSize="x-large";
+    }
+    function l()
+    {
+        document.getElementById("large").style.fontSize="medium";
+    }
+    function underline()
+    {
+        document.getElementById("underline").style.textDecoration="underline";
+    }
+    function u()
+    {
+        document.getElementById("underline").style.textDecoration="none";
+    }
+    function boldd()
+    {
+        document.getElementById("bold").style.fontWeight="900";
+    }
+    function b()
+    {
+        document.getElementById("bold").style.fontWeight="10";
+    }
+    </script>
+</body>
+</html>

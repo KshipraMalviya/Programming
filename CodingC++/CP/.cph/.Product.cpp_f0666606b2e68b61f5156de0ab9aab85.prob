@@ -1,0 +1,1 @@
+{"name":"Local: Product","url":"c:\\Users\\DELL\\Desktop\\CodingC++\\CP\\Product.cpp","tests":[{"id":1645631726673,"input":"2\n2 4\n8 12","output":"2\n3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\DELL\\Desktop\\CodingC++\\CP\\Product.cpp","group":"local","local":true}

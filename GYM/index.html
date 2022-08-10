@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoga Centre - Time To Detox</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<style>
+    body{
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background-image: url('18bg.jpg');
+        background-size:cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+    .left{
+        position: absolute;
+        position: fixed;
+        left: 34px;
+        top: 18px;
+        display: inline-block;
+        /* border: 2px solid rgb(255, 0, 234); */
+    }
+    .left a{
+        text-decoration: none;
+        color: white;
+        font-weight: 800;
+    }
+    .left img{
+        width: 78px;
+        border-radius: 18px;
+        display: block;
+        margin: auto;
+    }
+    .mid{
+        display: block;
+        width: 48%;
+        margin: 18px auto;
+        /* border: 2px solid rgb(0, 234, 255); */
+    }
+    .navbar{
+        position: fixed;
+    }
+    .right{
+        position: absolute;
+        position: fixed;
+        right: 34px;
+        top: 18px;
+        display: inline-block;
+        /* border: 2px solid rgb(221, 255, 0); */
+    }
+    .navbar li{
+        display: inline-block;
+        align-items: center;
+    }
+    .navbar li a{
+        color: white;
+        text-decoration: none;
+        padding: 23px;
+        font-size: 25px;
+    }
+    .navbar li a:hover, .navbar li a.active{
+        color: rgb(255, 255, 0);
+        font-weight:800;
+    }
+    .btn{
+        padding: 8px 18px;
+        margin: 11px;
+        border-radius: 18px;
+        border-color: white;
+        background-color: transparent;
+        font-weight: 800;
+        font-size: 18px;
+        color: white;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        cursor: pointer;
+    }
+    .btn:hover{
+        border-color: rgb(255, 255, 0);
+        color: rgb(255, 255, 0);;
+    }
+</style>
+<body>
+    <header class="hearder">
+        <!-- left box for logo -->
+        <div class="left">
+            <a href="index.html"><img src="logoo.png" alt="logo"></a>
+            <div style="font-size: large; text-align: center;"><a href="index.html"> Time To Detox</a></div>
+        </div>
+        <!-- mid box for navigation -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Call Us Now</button><button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        I am container
+    </div>
+</body>
+</html>

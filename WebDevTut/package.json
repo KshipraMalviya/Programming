@@ -1,0 +1,64 @@
+{
+  "name": "webdevtut",
+  "version": "1.0.0",
+  "description": "This is the best package ever built by someone",
+  "main": "tut63.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "osm"
+  ],
+  "author": "k",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "slugify": "^1.6.5"
+  }
+}
+
+
+// Resume
+// Experience,
+//  Achievements, 
+//  Hackathons,
+//   Coding Competitions,
+//    Organising these events
+// Personal Projects, mini?
+// github, linkedin
+// cgpa academics
+
+// internship
+
+// volutering experience
+
+// Development?
+// Face Recognition, Data Analysis, Algorithm - 3 Themes for 2022
+
+// Online Coding Test 
+// long and short ans type ques, explain in your own lang , mcqs, truefalse type ques
+
+// Time Complexity, DSA , best case worst case average case, thought process, clean code, modified code then T.C. variation? 
+
+// inside while loop sorting algo
+
+// Code of DS from scratch
+
+// formula based ques on Trees
+
+// Revision???? mcqs and others ques practice?
+
+// Recursion
+
+// What is IOT? How it has changed the world?
+// What do u think of self driving cars? How it has changed? Electric cars/ motorvehicles
+
+// Have understanding of these things and how can they be made better
+
+// graphs, dp, tries, segment trees ?????? 
+
+// pseudo codes of some algo should be on finger tips
+
+// Negative marking?
+
+// oops, cs fundamentals??

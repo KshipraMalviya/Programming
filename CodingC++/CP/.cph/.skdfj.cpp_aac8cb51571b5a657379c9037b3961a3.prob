@@ -1,0 +1,1 @@
+{"name":"Local: skdfj","url":"c:\\Users\\DELL\\Desktop\\CodingC++\\CP\\skdfj.cpp","tests":[{"id":1647701663803,"input":"2\n10\n73452","output":"NO\nYES"},{"id":1647702931824,"input":"1\n125555","output":"YES"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\DELL\\Desktop\\CodingC++\\CP\\skdfj.cpp","group":"local","local":true}
